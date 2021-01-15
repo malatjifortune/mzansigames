@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GAME EXPERIENCE</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>GAMING</span> EXPERIENCE</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Best Games You have ever Played</h3>
+        <ul>
+          <li><i class="fa fa-road"></i>Afri Games</li>
+          <li><i class="fa fa-phone"></i>066-474-6250</li>
+          <li><i class="fa fa-envelope"></i>Khoza@gmail.com</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>let us know more about the Game you played</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name of Game</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Gaming Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Your email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Your phone number </label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <label for="rate">RATING OF GAME FROM 1 TO 10 :</label>
+
+			<select name="rating out of 10" id="rate">
+			  <option value="volvo"></option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			  <option value="6">6</option>
+			  <option value="7">7</option>
+			  <option value="8">8</option>
+			  <option value="9">9</option>
+			  <option value="10">10</option>
+			</select>
+
+      <label for="online">Is it an online Game or offline"</label>
+    
+			<select name="online" id="online">
+        <option value="NULL"></option>
+			  <option value="NOT SURE">NOT SURE</option>
+			  <option value="yes">yes</option>
+			  <option value="No">No</option>
+			</select>
+
+
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
